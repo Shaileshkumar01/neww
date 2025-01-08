@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sunrise Coke Enterprises Pvt Ltd - Your Trusted Partner in High-Quality Coal & Coke Distribution.">
+  <meta name="keywords" content="Coal, Coke, Wholesale Distributors, Steel, Energy, Manufacturing">
+  <meta name="author" content="Sunrise Coke Enterprises Pvt Ltd">
+  <title>Sunrise Coke Enterprises Pvt Ltd</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header Section -->
+  <header class="header">
+    <div class="logo">Sunrise Coke</div>
+    <nav class="nav">
+      <a href="#home">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="prdt.html">Products</a>
+      <a href="inds.html">Industries Served</a>
+      <a href="cont.html">Contact Us</a>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>Your Trusted Partner in High-Quality Coal & Coke Distribution</h1>
+      <p>Providing premium raw materials for energy, steel, and manufacturing industries.</p>
+      <div class="hero-buttons">
+        <a href="#products" class="btn">Explore Our Products</a>
+        <a href="#contact" class="btn">Contact Us</a>
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- Quick Overview Section -->
+  <section class="overview">
+    <h2>Welcome to Sunrise Coke Enterprises Pvt Ltd</h2>
+    <p>We specialize in the wholesale distribution of high-grade coal and coke. Our commitment to quality and reliability has made us a trusted partner for industrial raw materials.</p>
+    <a href="#about" class="btn">Learn More About Us</a>
+  </section>
+  <section class="testimonials">
+    <h2>What Our Clients Say</h2>
+    <div class="testimonial">
+      <p>"Sunrise Coke Enterprises has been a reliable partner for our coal supply needs. Their commitment to quality and customer service is unmatched." <strong>- John Doe, CEO of XYZ Corp</strong></p>
+    </div>
+    <div class="testimonial">
+      <p>"We trust Sunrise Coke for our coke supply; their products help us maintain high standards in manufacturing." <strong>- Jane Smith, Operations Manager, ABC Industries</strong></p>
+    </div>
+  </section>
+  
+  <!-- Products Section -->
+ <!-- In the Products Section -->
+<section id="products" class="products">
+    <h2>Our Premium Products</h2>
+    <div class="product-list">
+      <div class="product">
+        <img src="https://via.placeholder.com/150" alt="Indonesian Coal">
+        <h3>Indonesian Coal</h3>
+        <p>High calorific value and low ash content.</p>
+      </div>
+      <div class="product">
+        <img src="https://via.placeholder.com/150" alt="African Coal">
+        <h3>African Coal</h3>
+        <p>Durable and ideal for diverse industrial uses.</p>
+      </div>
+      <div class="product">
+        <img src="https://via.placeholder.com/150" alt="Industrial Coke">
+        <h3>Industrial Coke</h3>
+        <p>Essential for high-temperature industrial processes.</p>
+      </div>
+      <div class="product">
+        <img src="https://via.placeholder.com/150" alt="Metallurgical Coke">
+        <h3>Metallurgical Coke</h3>
+        <p>High strength and purity for steel manufacturing.</p>
+      </div>
+    </div>
+  </section>
+   
+
+  <!-- Industries Section -->
+  <section id="industries" class="industries">
+    <h2>Powering Industries Nationwide</h2>
+    <div class="industries-list">
+      <div class="industry">
+        <h3>Steel Production</h3>
+        <p>High-quality coke for reliable steel manufacturing processes.</p>
+      </div>
+      <div class="industry">
+        <h3>Energy Generation</h3>
+        <p>Coal tailored for power plants and energy needs.</p>
+      </div>
+      <div class="industry">
+        <h3>Manufacturing</h3>
+        <p>Raw materials for efficient industrial operations.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <h2>Get In Touch</h2>
+    <p>Need more information? Our team is here to assist you.</p>
+    <div class="contact-info">
+      <p><strong>Phone:</strong> +91 XXXXXXXXXX</p>
+      <p><strong>Email:</strong> info@sunrisecoke.com</p>
+      <p><strong>Address:</strong> [Insert Company Address]</p>
+    </div>
+    <a href="mailto:info@sunrisecoke.com" class="btn">Email Us Now</a>
+  </section>
+  <script>
+    // Smooth Scrolling for Navigation Links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      });
+    });
+    
+    // Hero Section Text Animation
+    window.addEventListener('DOMContentLoaded', () => {
+      const heroText = document.querySelector('.hero h1');
+      heroText.classList.add('animate-text');
+    });
+    
+    document.addEventListener('scroll', () => {
+      const sections = document.querySelectorAll('section');
+      sections.forEach(section => {
+        const rect = section.getBoundingClientRect();
+        if (rect.top >= 0 && rect.bottom <= window.innerHeight) {
+          section.classList.add('section-visible');
+        }
+      });
+    });
+    </script>
+    
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2025 Sunrise Coke Enterprises Pvt Ltd. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>

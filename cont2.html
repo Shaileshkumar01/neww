@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Sunrise Coke Enterprises</title>
+  <link rel="stylesheet" href="cont2.css">
+</head>
+<body>
+
+  <section id="contact-us">
+    <!-- Contact Form Section -->
+    <section id="contact-form">
+      <h2>Contact Us</h2>
+      <form action="#" method="POST">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="Enter your message" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+
+    <!-- Google Map Section -->
+    <section id="map">
+      <h2>Our Location</h2>
+      <div id="map-container">
+        <!-- Replace with your Google Maps Embed Code -->
+        <iframe src="https://www.google.com/maps/embed?pb=YOUR_GOOGLE_MAPS_EMBED_CODE" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+      </div>
+    </section>
+
+    <!-- Live Chat Widget Section -->
+    <div id="live-chat-widget">
+      <button onclick="openChat()">Chat with Us</button>
+    </div>
+
+  </section>
+
+  <script>
+    // Function for the Live Chat Button
+    function openChat() {
+      // Here you would integrate a third-party live chat service such as Tawk.to or Zendesk.
+      alert("Live Chat Opened!"); // Placeholder action for demonstration
+    }
+  </script>
+
+</body>
+</html>
