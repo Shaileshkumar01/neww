@@ -215,3 +215,7 @@ section {
   transform: scale(1.1);
   background-color: #e65c00;
 }
+.hero {
+  background: url('your-image-path.jpg') no-repeat center center/cover;
+  position: relative;
+}
